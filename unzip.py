@@ -15,8 +15,8 @@
 
 import zipfile
 
-ZIP_PATH = "" # enter zip file path
-UNZIP_PATH = "" # enter path you wanna save unzip file
+ZIP_PATH = fr"" # enter zip file path
+UNZIP_PATH = fr"" # enter path you wanna save unzip file
 
 with zipfile.ZipFile(ZIP_PATH, "r") as zipFile:
     zipFile.extractall(path=UNZIP_PATH)
