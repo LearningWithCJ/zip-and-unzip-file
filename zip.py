@@ -15,8 +15,8 @@
 
 import zipfile, os
 
-FILE_PATH = "" # enter path you wanna zip
-ZIP_PATH = "" # enter path you wanna save zip file
+FILE_PATH = fr"" # enter path you wanna zip
+ZIP_PATH = fr"" # enter path you wanna save zip file
 
 with zipfile.ZipFile(ZIP_PATH, 'w') as zipFile:
     for root, dirs, files in os.walk(FILE_PATH):
